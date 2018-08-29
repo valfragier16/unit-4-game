@@ -1,3 +1,9 @@
+.wallpaper { 
+	background-image: url("../Images/wallpaper.jpg");
+	background-size: 100%;
+ }
+
+
 .header { 
 	font-family: 'Bangers', cursive;
   }
@@ -49,12 +55,6 @@
 	font-size: 200%;
 	font-family: 'Orbitron', sans-serif;
  }
-
- .wallpaper { 
-	background-image: url("../Images/wallpaper.jpg");
-	background-size: 100%;
- }
-
 
   .wins, .losses { 
 	padding: 2%;
