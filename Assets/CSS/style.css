@@ -1,5 +1,5 @@
 .wallpaper { 
-	background-image: url("../Images/wallpaper.jpg");
+	background-image: url("../Images/wallpaper2.png");
 	background-size: 100%;
  }
 
@@ -7,6 +7,8 @@
 .header { 
 	font-family: 'Bangers', cursive;
 	font-size: 40px;
+	padding: 2%;
+	color:white;
   }
 
 .instruction {
@@ -16,7 +18,8 @@
 	opacity: 0.6; 
 	font-family: 'Orbitron', sans-serif;
     color: black;
-    font-weight: bold;
+	font-weight: bold;
+	line-height: 1.5em;
 }
 
 .randomNumber {
@@ -60,6 +63,7 @@
   .wins, .losses { 
 	padding: 2%;
 	color: red;
+	line-height: 1.5em;
   }
 
 
