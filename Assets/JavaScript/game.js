@@ -26,19 +26,19 @@ $(document).ready(function() {
     //Define variables: Set Each crystal to display random hidden value between 1-12
 	var crystalOne = Math.floor(Math.random() * 12) + 1; 
 		console.log("Crystal 1: " + crystalOne); 
-		$("#img1").html("<img src=" + "Assets/Images/image1.png" + " value=" + crystalOne + ">"); 
+		$("#img1").html("<img src=" + "Assets/Images/image1" + " value=" + crystalOne + ">"); 
 
 	var crystalTwo = Math.floor(Math.random() * 12) + 1; 
 		console.log("Crystal 2: " + crystalTwo); 
-		$("#img2").html("<img src=" + "Assets/Images/image2.png" + " value=" + crystalTwo + ">"); 
+		$("#img2").html("<img src=" + "Assets/Images/image2" + " value=" + crystalTwo + ">"); 
 
 	var crystalThree = Math.floor(Math.random() * 12) + 1; 
 		console.log("Crystal 3: " + crystalThree); 
-		$("#img3").html("<img src=" + "Assets/Images/image3.png" + " value=" + crystalThree + ">");
+		$("#img3").html("<img src=" + "Assets/Images/image3" + " value=" + crystalThree + ">");
 	
 	var crystalFour = Math.floor(Math.random() * 12) + 1; 
 		console.log("Crystal 4: " + crystalFour); 
-		$("#img4").html("<img src=" + "Assets/Images/image4.png" + " value=" + crystalFour + ">");
+		$("#img4").html("<img src=" + "Assets/Images/image4" + " value=" + crystalFour + ">");
     
         
     //Set scores to zero and update through game
