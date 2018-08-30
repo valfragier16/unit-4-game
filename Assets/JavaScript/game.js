@@ -62,6 +62,12 @@ $(document).ready(function() {
     }
 
     function reset () {
+        // reset random number after win/loss
+        var compPick = Math.floor(Math.random() * 102) + 19; 
+        console.log("compPick: " + compPick); 
+        $(".randomNumber").html(compPick); 
+
+        // reset "Your score" to 0 after win/loss
         score = 0; 
         $(".scoreDisplay").html(score);
 
