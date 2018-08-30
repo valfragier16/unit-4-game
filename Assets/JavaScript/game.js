@@ -16,12 +16,13 @@ This will result in a score being displayed as a win or loss, and a new random n
 
 */
 
-
+alert("Thanos is determined to obtain the infinity stones. Defeat him by collecting other galaxy crystals before its too late!");
 
 $(document).ready(function() {
- /*   -----------------------------------------------
-    2. What steps do you think are necessary?
-    ----------------------------------------------- */
+ /*   
+-----------------------------------------------
+2. What steps do you think are necessary?
+----------------------------------------------- */
 
 
     //Define variables: Set Each crystal to display random hidden value between 1-12
@@ -62,8 +63,10 @@ $(document).ready(function() {
 
     function reset () {
         score = 0; 
-        $(".scoreDisplay").html(score); 
+        $(".scoreDisplay").html(score);
+
     
+    // 2) Each crystal has a random value  between 1-12 that changes each round
         crystalOne = Math.floor(Math.random() * 12) + 1;  
             console.log("Crystal 1: " + crystalOne); 
         $("#img1").html("<img src=" + "Assets/Images/image1.png" + " value=" + crystalOne + ">"); 
@@ -81,7 +84,7 @@ $(document).ready(function() {
         $("#img4").html("<img src=" + "assets/images/image4.png" + " value=" + crystalFour + ">");
     
 
-    //Display crystals as buttons
+    // 3) Display crystals as buttons
         $("img").on("click", function () {
             var newScore = score += parseInt($(this).attr("value")); 
                 console.log("New Score: " + newScore); 
@@ -106,7 +109,7 @@ $(document).ready(function() {
         
 
 
-    //Function to attach crystals to score
+    // 4) Attach crystals buttons to score
 	$("img").on("click", function () {
 		var newScore = score += parseInt($(this).attr("value")); 
 			console.log("New Score: " + newScore); 
