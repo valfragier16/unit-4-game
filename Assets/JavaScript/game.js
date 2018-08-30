@@ -1,31 +1,31 @@
-/*Game JavaScript Controls*/
+/*Game JavaScript Controls
+
+-----------------------------------------------
+1. What do you want to make?:
+-----------------------------------------------
+
+I want to create a crystal collector where there are four crystals, that will be displayed as buttons.
+The player will be shown a random number at the start of the game. 
+When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
+The player wins if their total score matches the random number from the beginning of the game.
+The player losses if their score goes above the random number.
+
+Loop:
+The game restarts whenever the playerr wins or loses.
+This will result in a score being displayed as a win or loss, and a new random number will be generated.
+
+*/
+
+
 
 $(document).ready(function() {
 
-    //Remember FizzBuzz activity 	
-    /* var randomNumber =100;
-        if (randomNumber %3 === 0 ) {
-                if (randomNumber %5 === 0){
-                    console.log("fizzbuzz");
-                }
-            else {
-                console.log("fizz");
-            }
-            }
-            else if (randomNumber%5 === 0){
-                console.log("buzz");
-            }
-            else {
-                console.log(randomNumber);
-            }
-        } */
-
-
     //Computer picks random nummber that is automatically displayed on page to begin game
-    var compPick = Math.floor(Math.random() * 102) + 19; 
-    console.log("compPick: " + compPick); 
-    $(".randomNumber").html(compPick); 
-
+    for (var compPick=19; compPick <= 120; compPick++){
+        var compPick = Math.floor(Math.random() * 102) + 19; 
+        console.log("compPick: " + compPick); 
+        $(".randomNumber").html(compPick); 
+    }
 
         // Game begins - score and cyrstal random number generator 0
         function reset () {
