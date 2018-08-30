@@ -25,24 +25,24 @@ $(document).ready(function() {
 
 
     //Define variables: Set Each crystal to display random number when selected
-	var crystalOne = Math.floor(Math.random() * 16) + 1; 
+	var crystalOne = Math.floor(Math.random() * 12) + 1; 
 		console.log("Crystal 1: " + crystalOne); 
 		$("#img1").html("<img src=" + "assets/images/image1.png" + " value=" + crystalOne + ">"); 
 
-	var crystalTwo = Math.floor(Math.random() * 16) + 1; 
+	var crystalTwo = Math.floor(Math.random() * 12) + 1; 
 		console.log("Crystal 2: " + crystalTwo); 
 		$("#img2").html("<img src=" + "assets/images/image2.png" + " value=" + crystalTwo + ">"); 
 
-	var crystalThree = Math.floor(Math.random() * 16) + 1; 
+	var crystalThree = Math.floor(Math.random() * 12) + 1; 
 		console.log("Crystal 3: " + crystalThree); 
 		$("#img3").html("<img src=" + "assets/images/image3.png" + " value=" + crystalThree + ">");
 	
-	var crystalFour = Math.floor(Math.random() * 16) + 1; 
+	var crystalFour = Math.floor(Math.random() * 12) + 1; 
 		console.log("Crystal 4: " + crystalFour); 
 		$("#img4").html("<img src=" + "assets/images/image4.png" + " value=" + crystalFour + ">");
     
         
-    //Update scores
+    //Set scores to zero and update through game
 	var wins = 0; 
 		console.log("wins: " + wins); 
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
 		console.log("score: " + score); 
     
 
-    //Computer picks random nummber that is automatically displayed on page to begin game
+    // 1) Computer picks random nummber that is automatically displayed on page to begin game
     for (var compPick=19; compPick <= 120; compPick++){
         var compPick = Math.floor(Math.random() * 102) + 19; 
         console.log("compPick: " + compPick); 
@@ -69,19 +69,19 @@ $(document).ready(function() {
             score = 0; 
             $(".scoreDisplay").html(score); 
     
-            crystalOne = Math.floor(Math.random() * 16) + 1;  
+            crystalOne = Math.floor(Math.random() * 12) + 1;  
                 console.log("Crystal 1: " + crystalOne); 
             $("#img1").html("<img src=" + "Assets/Images/image1.png" + " value=" + crystalOne + ">"); 
     
-            crystalTwo = Math.floor(Math.random() * 16) + 1; 
+            crystalTwo = Math.floor(Math.random() * 12) + 1; 
                 console.log("Crystal 2: " + crystalTwo); 
             $("#img2").html("<img src=" + "assets/images/image2.png" + " value=" + crystalTwo + ">"); 
     
-            crystalThree = Math.floor(Math.random() * 16) + 1; 
+            crystalThree = Math.floor(Math.random() * 12) + 1; 
                 console.log("Crystal 3: " + crystalThree); 
             $("#img3").html("<img src=" + "assets/images/image3.png" + " value=" + crystalThree + ">");
         
-            crystalFour = Math.floor(Math.random() * 16) + 1; 
+            crystalFour = Math.floor(Math.random() * 12) + 1; 
                 console.log("Crystal 4: " + crystalFour); 
             $("#img4").html("<img src=" + "assets/images/image4.png" + " value=" + crystalFour + ">");
     
