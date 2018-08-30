@@ -16,6 +16,8 @@ This will result in a score being displayed as a win or loss, and a new random n
 
 */
 
+alert("Thanos is determined to obtain all the infinity stones! Collect as many galaxy crystals before Thanos destroys the universe!");
+
 $(document).ready(function() {
  /*   
 -----------------------------------------------
