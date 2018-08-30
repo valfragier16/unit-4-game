@@ -38,7 +38,7 @@ $(document).ready(function() {
     
             crystalOne = Math.floor(Math.random() * 12) + 1;  
                 console.log("Crystal 1: " + crystalOne); 
-            $("#img1").html("<img src=" + "assets/images/image1.png" + " value=" + crystalOne + ">"); 
+            $("#img1").html("<img src=" + "Assets/Images/image1.png" + " value=" + crystalOne + ">"); 
     
             crystalTwo = Math.floor(Math.random() * 12) + 1; 
                 console.log("Crystal 2: " + crystalTwo); 
